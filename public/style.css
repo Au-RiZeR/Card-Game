@@ -1,18 +1,88 @@
-body { margin: 0; padding-bottom: 3rem; font-family: Helvetica, Arial, sans-serif; }
+/* body { margin: 0; padding-bottom: 3rem; font-family: Helvetica, Arial, sans-serif; } */
 
-#form { background: rgba(0, 0, 0, 0.15); padding: 0.25rem; position: fixed; bottom: 0; left: 0; right: 0; display: flex; height: 3rem; box-sizing: border-box; backdrop-filter: blur(10px); }
+/* #form { background: rgba(0, 0, 0, 0.15); padding: 0.25rem; position: fixed; bottom: 0; left: 0; right: 0; display: flex; height: 3rem; box-sizing: border-box; backdrop-filter: blur(10px); }
 #input { border: none; padding: 0 1rem; flex-grow: 1; border-radius: 2rem; margin: 0.25rem; }
 #input:focus { outline: none; }
 #form > button { background: #333; border: none; padding: 0 1rem; margin: 0.25rem; border-radius: 3px; outline: none; color: #fff; }
 
 #messages { list-style-type: none; margin: 0; padding: 0; }
 #messages > li { padding: 0.5rem 1rem; }
-#messages > li:nth-child(odd) { background: #efefef; }
+#messages > li:nth-child(odd) { background: #efefef; } */
 
-.card {
+.card, .cardOP, #cardInPlay {
+    display: block;
     max-width: 20vw;
+    max-height: 25vh;
+    /* align-self: center; */
+    text-align: center;
 }
 
 img {
+    /* justify-content: center; */
     max-width: 100%;
+    max-height: 100%;
+}
+
+#cards {
+    min-height: fit-content;
+    width: 100%;
+    /* position: fixed; */
+    bottom: 0;
+    display: flex;
+    /* flex-wrap: nowrap; */
+    justify-content: space-evenly;
+}
+
+#cardsOP {
+    min-height: fit-content;
+    width: 100%;
+    /* position: fixed; */
+    top: 0;
+    display: flex;
+    /* flex-wrap: nowrap; */
+    justify-content: space-evenly;
+}
+
+#centerCard {
+    min-height: fit-content;
+    width: 100%;
+    /* position: fixed; */
+    top: 0;
+    display: flex;
+    /* flex-wrap: nowrap; */
+    justify-content: space-evenly;
+    align-self: center;
+}
+
+#playSpace {
+    width: 100%;
+    min-height: 98vh;
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+#top, #mid, #bot{
+    display: flex;
+    flex-direction: column;
+    min-height: 33vh;
+}
+
+#mid {
+    flex-direction: column-reverse;
+}
+
+button {
+    font-size: xx-large;
+    margin: 40px;
+    border-width: 5px;
+    background-color: rgb(255, 53, 53);
+    border-color: rgb(252, 28, 28);
+    border-radius: 30px;
+    min-width: 15%;
+    max-width: auto;
+    /* justify-self: center; */
+    
+    align-self: center;
 }

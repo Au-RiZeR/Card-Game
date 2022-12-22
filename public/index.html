@@ -1,18 +1,42 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Socket.IO chat</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-  </head>
-  <body>
-    <ul id="messages"></ul>
-    <div id="cards"><div class="10_of_clubs card" alt="10_of_clubs"><img src="./images/cards/10_of_clubs.png" alt="10_of_clubs"></div></div>
-    <form id="form" action="">
-      <button id="pickup">Pickup</button><button id="send">Send</button>
-    </form>
-    <script src="/socket.io/socket.io.js"></script>
 
-    <script src="./index.js"></script>
-  </body>
+<head>
+  <title>Socket.IO chat</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <div id="playSpace">
+    <div id="top">
+      <div id="cardsOP">
+        <!-- <div class="10_of_clubs card" alt="10_of_clubs"><img src="./images/cards/10_of_clubs.png" alt="10_of_clubs"></div> -->
+      </div>
+    </div>
+
+    <div id="mid">
+      <button id="pickup">Pickup</button>
+      <div id="centerCard"><img id="cardInPlay" src="" alt=""></div>
+    </div>
+
+    <div id="bot">
+      <div id="cards">
+        <!-- <div class="10_of_clubs card" alt="10_of_clubs"><img src="./images/cards/10_of_clubs.png" alt="10_of_clubs"></div> -->
+      </div>
+    </div>
+    <!-- <ul id="messages"></ul> -->
+    
+
+    <!-- <form id="form" action="">
+      <button id="send">Send</button>
+    </form> -->
+  </div>
+
+
+  <script src="/socket.io/socket.io.js"></script>
+
+  <script src="./index.js"></script>
+</body>
+
 </html>
